@@ -243,26 +243,26 @@ ul li a:hover{
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="aboutus2.html">ABOUT</a></li>
+                    <li><a href="#">MAISON</a></li>
+                    <li><a href="aboutus2.html">À PROPOS</a></li>
                     
                     <li><a href="contactus2.html">CONTACT</a></li>
-                    <li><a href="feedback/Feedbacks.php">FEEDBACK</a></li>
-                    <li><button class="nn"><a href="index.php">LOGOUT</a></button></li>
+                    <li><a href="feedback/Feedbacks.php">RETOUR</a></li>
+                    <li><button class="nn"><a href="index.php">SE DÉCONNECTER</a></button></li>
                     <li><img src="images/profile.png" class="circle" alt="Alps"></li>
-                    <li><p class="phello">HELLO! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>
-                    <li><a id="stat" href="bookinstatus.php">BOOKING STATUS</a></li>
+                    <li><p class="phello">BONJOUR! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>
+                    <li><a id="stat" href="bookinstatus.php">STATUT DE RÉSERVATION</a></li>
                 </ul>
             </div>
             
             
         </div>
-      <div><h1 class="overview">OUR CARS OVERVIEW</h1>
+      <div><h1 class="overview">APERÇU DE NOS VOITURES</h1>
 
     <ul class="de">
     <?php
@@ -282,10 +282,10 @@ ul li a:hover{
         <div class="content">
             <?php $res=$result['CAR_ID'];?>
             <h1><?php echo $result['CAR_NAME']?></h1>
-            <h2>Fuel Type : <a><?php echo $result['FUEL_TYPE']?></a> </h2>
-            <h2>CAPACITY : <a><?php echo $result['CAPACITY']?></a> </h2>
-            <h2>Rent Per Day : <a>₹<?php echo $result['PRICE']?>/-</a></h2>
-            <button type="submit"  name="booknow" class="utton" style="margin-top: 5px;"><a href="booking.php?id=<?php echo $res;?>">book</a></button>
+            <h2>Type de carburant : <a><?php echo $result['FUEL_TYPE']?></a> </h2>
+            <h2>CAPACITÉ : <a><?php echo $result['CAPACITY']?></a> </h2>
+            <h2>Loyer par jour : <a>₹<?php echo $result['PRICE']?>/-</a></h2>
+            <button type="submit"  name="booknow" class="utton" style="margin-top: 5px;"><a href="booking.php?id=<?php echo $res;?>">livre</a></button>
         </div>
     </div></form></li>
     <?php

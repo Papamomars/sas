@@ -3,7 +3,7 @@
     $con = mysqli_connect('localhost','root','','carproject');
     if(!$con)
     {
-        echo 'please check your Database connection';
+        echo 'veuillez vérifier votre connexion à la base de données';
     }
 
 

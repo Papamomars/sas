@@ -73,9 +73,9 @@
       <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
-        <h1>Success</h1> 
-        <p>We received your rental request;<br/> we'll be in touch shortly!</p>
-        <div class="ba"><button id="back"><a href="cardetails.php">Search Cars</a></button></div>
+        <h1>Succès</h1> 
+        <p>Nous avons reçu votre demande de location ;<br/>nous vous contacterons sous peu !</p>
+        <div class="ba"><button id="back"><a href="cardetails.php">Rechercher des voitures</a></button></div>
         
       </div>
     </body>

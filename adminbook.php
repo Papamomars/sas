@@ -171,39 +171,39 @@ $num=mysqli_num_rows($queryy);
 <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <li><a href="adminvehicle.php">GESTION DES VÉHICULES</a></li>
+                    <li><a href="adminusers.php">UTILISATEURS</a></li>
+                    <li><a href="admindash.php">COMMENTAIRES</a></li>
                     
-                    <li><a href="adminbook.php">BOOKING REQUEST</a></li>
-                  <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
+                    <li><a href="adminbook.php">DEMANDE DE RÉSERVATION</a></li>
+                  <li> <button class="nn"><a href="index.php">SE DÉCONNECTER</a></button></li>
                 </ul>
             </div>
          </div>
 
          </div>
         <div>
-            <h1 class="header">BOOKINGS</h1>
+            <h1 class="header">RÉSERVATIONS</h1>
             <div>
                 <div>
                     <table class="content-table">
                 <thead>
                     <tr>
-                        <th>CAR ID</th>
-                        <th>EMAIL</th>
-                        <th>BOOK PLACE</th>
-                        <th>BOOK DATE</th>
-                        <th>DURATION</th>
-                        <th>PHONE NUMBER</th>
+                        <th>ID DE VOITURE</th>
+                        <th>E-MAIL</th>
+                        <th>RÉSERVER PLACE</th>
+                        <th>DATE DE RÉSERVATION</th>
+                        <th>DURÉE</th>
+                        <th>NUMÉRO DE TÉLÉPHONE</th>
                         <th>DESTINATION</th>
-                        <th>RETURN DATE</th>
-                        <th>BOOKING STATUS</th>
-                        <th>APPROVE</th>
-                        <th>CAR RETURNED</th>
+                        <th>DATE DE RETOUR</th>
+                        <th>STATUT DE RÉSERVATION</th>
+                        <th>APPROUVER</th>
+                        <th>VOITURE RETOURNÉE</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -225,8 +225,8 @@ $num=mysqli_num_rows($queryy);
                     <td><?php echo $res['DESTINATION'];?></php></td>
                     <td><?php echo $res['RETURN_DATE'];?></php></td>
                     <td><?php echo $res['BOOK_STATUS'];?></php></td>
-                    <td><button type="submit"  class="but"  name="approve"><a href="approve.php?id=<?php echo $res['BOOK_ID']?>">APPROVE</a></button></td>
-                    <td><button type="submit" class="but" name="approve"><a href="adminreturn.php?id=<?php echo $res['CAR_ID']?>&bookid=<?php echo $res['BOOK_ID']?>">RETURNED</a></button></td>
+                    <td><button type="submit"  class="but"  name="approve"><a href="approve.php?id=<?php echo $res['BOOK_ID']?>">APPROUVER</a></button></td>
+                    <td><button type="submit" class="but" name="approve"><a href="adminreturn.php?id=<?php echo $res['CAR_ID']?>&bookid=<?php echo $res['BOOK_ID']?>">REVENU</a></button></td>
                 </tr>
                <?php } ?>
                 </tbody>

@@ -169,34 +169,34 @@ $num=mysqli_num_rows($queryy);
 <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <li><a href="adminvehicle.php">GESTION DES VÉHICULES</a></li>
+                    <li><a href="adminusers.php">UTILISATEURS</a></li>
+                    <li><a href="admindash.php">COMMENTAIRES</a></li>
                     
-                    <li><a href="adminbook.php">BOOKING REQUEST</a></li>
-                  <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
+                    <li><a href="adminbook.php">DEMANDE DE RÉSERVATION</a></li>
+                  <li> <button class="nn"><a href="index.php">SE DÉCONNECTER</a></button></li>
                 </ul>
             </div>
             
           
         </div>
         <div>
-            <h1 class="header">USERS</h1>
+            <h1 class="header">UTILISATEURS</h1>
             <div>
                 <div>
                     <table class="content-table">
                 <thead>
                     <tr>
-                        <th>NAME</th> 
-                        <th>EMAIL</th>
-                        <th>LICENSE NUMBER</th>
-                        <th>PHONE NUMBER</th> 
-                        <th>GENDER</th> 
-                        <th>DELETE USERS</th>
+                        <th>NOM</th> 
+                        <th>E-MAIL</th>
+                        <th>NUMÉRO DE LICENCE</th>
+                        <th>NUMÉRO DE TÉLÉPHONE</th> 
+                        <th>GENRE</th> 
+                        <th>SUPPRIMER DES UTILISATEURS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -213,7 +213,7 @@ $num=mysqli_num_rows($queryy);
                     <td><?php echo $res['LIC_NUM'];?></php></td>
                     <td><?php echo $res['PHONE_NUMBER'];?></php></td>
                     <td><?php echo $res['GENDER'];?></php></td>
-                    <td><button type="submit" class="but" name="approve"><a href="deleteuser.php?id=<?php echo $res['EMAIL']?>">DELETE USER</a></button></td>
+                    <td><button type="submit" class="but" name="approve"><a href="deleteuser.php?id=<?php echo $res['EMAIL']?>">SUPPRIMER L'UTILISATEUR</a></button></td>
                 </tr>
                <?php } ?>
                 </tbody>

@@ -258,7 +258,7 @@ ul li a:hover{
         $rdate=date('Y-m-d',strtotime($_POST['rdate']));
          
         if(empty($bplace)|| empty($bdate)|| empty($dur)|| empty($phno)|| empty($des)|| empty($rdate)){
-            echo '<script>alert("please fill the place")</script>';
+            echo '<script>alert("s il te plaît, remplis la place")</script>';
 
         }
         else{
@@ -273,11 +273,11 @@ ul li a:hover{
                 header("Location: payment.php");
             }
             else{
-                echo '<script>alert("please check the connection")</script>';
+                echo '<script>alert("veuillez vérifier la connexion")</script>';
             }
         }
         else{
-            echo  '<script>alert("please enter a correct rturn date")</script>';
+            echo  '<script>alert("veuillez entrer une date de retour correcte")</script>';
         }
     
         }
@@ -291,17 +291,17 @@ ul li a:hover{
        <div class="hai">
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">CaRs</h2>
+                    <h2 class="logo">Voitures</h2>
                 </div>
                 <div class="menu" >
                     <ul>
-                        <li ><a href="cardetails.php">HOME</a></li>
-                        <li><a href="aboutus2.html">ABOUT</a></li>
-                        <li><a href="#">DESIGN</a></li>
+                        <li ><a href="cardetails.php">MAISON</a></li>
+                        <li><a href="aboutus2.html">À PROPOS</a></li>
+                        <li><a href="#">CONCEPTION</a></li>
                         <li><a href="contactus2.html">CONTACT</a></li>
-                        <li><button class="nn"><a href="index.html">LOGOUT</a></button></li>
+                        <li><button class="nn"><a href="index.html">SE DÉCONNECTER</a></button></li>
                         <li><img src="images/profile.png" class="circle" alt="Alps"></li>
-                    <li><p class="phello">HELLO! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>
+                    <li><p class="phello">BONJOUR! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>
 
                     
                     </ul>
@@ -313,45 +313,45 @@ ul li a:hover{
          <div class="main"> 
         
         <div class="register">
-            <h2>BOOKING</h2>
+            <h2>RÉSERVATION</h2>
         <form id="register" method="POST"  >
-            <h2>CAR NAME : <?php echo "".$email['CAR_NAME']?></h2>
-            <label>BOOKING PLACE : </label>
+            <h2>NOM DE LA VOITURE : <?php echo "".$email['CAR_NAME']?></h2>
+            <label>LIEU DE RÉSERVATION : </label>
             <br>
             <input type="text" name="place"
-            id="name" placeholder="Enter Your Destination">
+            id="name" placeholder="Entrez votre destination">
             <br><br>
 
-            <label>BOOKING DATE : </label>
+            <label>DATE DE RÉSERVATION : </label>
             <br>
             <input type ="date" name="date"
-            id="datefield" min='1899-01-01' max='2000-13-13'  placeholder="ENTER THE DATE FOR BOOKING">
+            id="datefield" min='1899-01-01' max='2000-13-13'  placeholder="ENTREZ LA DATE DE RÉSERVATION">
             <br><br>
 
-            <label>DURATION : </label>
+            <label>DURÉE : </label>
             <br>
             <input type ="number" name="dur" min="1" max="30" 
-            id="name" placeholder="Enter Rent Period (in days)">
+            id="name" placeholder="Entrez la période de location (en jours)">
             <br><br>
 
-            <label>PHONE NUMBER : </label>
+            <label>NUMÉRO DE TÉLÉPHONE : </label>
             <br>
             <input type="tel" name="ph" maxlength="10"
-            id="name" placeholder="Enter Your Phone Number">
+            id="name" placeholder="Entrez votre numéro de téléphone">
             <br><br>
             
             <label>DESTINATION : </label>
             <br>
             <input type="text" name="des"
-            id="name" placeholder="Enter Your Destination">
+            id="name" placeholder="Entrez votre destination">
             <br><br>
 
-            <label>Return date : </label>
+            <label>Date de retour : </label>
             <br>
             <input type ="date" name="rdate"
-            id="dfield"  min='1899-01-01' placeholder="Enter The Return Date">
+            id="dfield"  min='1899-01-01' placeholder="Entrez la date de retour">
             <br><br>
-            <input type="submit"  class="btnn" value="BOOK" name="book" >
+            <input type="submit"  class="btnn" value="Livre" name="book" >
             
         </form>
         </div>

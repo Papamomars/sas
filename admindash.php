@@ -169,31 +169,31 @@ $num=mysqli_num_rows($queryy);
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <li><a href="adminvehicle.php">GESTION DES VÉHICULES</a></li>
+                    <li><a href="adminusers.php">UTILISATEURS</a></li>
+                    <li><a href="admindash.php">COMMENTAIRES</a></li>
                     
-                    <li><a href="adminbook.php">BOOKING REQUEST</a></li>
-                  <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
+                    <li><a href="adminbook.php">DEMANDE DE RÉSERVATION</a></li>
+                  <li> <button class="nn"><a href="index.php">SE DÉCONNECTER</a></button></li>
                 </ul>
             </div> 
             
           
         </div>
         <div>
-            <h1 class="header">FEEDBACKS</h1>
+            <h1 class="header">COMMENTAIRES</h1>
             <div>
                 <div>
                     <table class="content-table">
                 <thead>
                     <tr>
                         <th>FEEDBACK_ID</th> 
-                        <th>EMAIL</th>
-                        <th>COMMENT</th>
+                        <th>E-MAIL</th>
+                        <th>COMMENTAIRE</th>
                     </tr>
                 </thead>
                 <tbody>

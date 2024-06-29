@@ -208,7 +208,7 @@ if(isset($_POST['pay'])){
   $cvv=mysqli_real_escape_string($con,$_POST['cvv']);
   $price=$email['PRICE'];
   if(empty($cardno) || empty($exp) ||  empty($cvv) ){
-    echo '<script>alert("please fill the place")</script>';
+    echo '<script>alert("s il te plaît, remplis la place")</script>';
   }
   else{
     $sql2="insert into payment (BOOK_ID,CARD_NO,EXP_DATE,CVV,PRICE) values($bid,'$cardno','$exp',$cvv,$price)";
@@ -228,14 +228,14 @@ if(isset($_POST['pay'])){
 
 
 
-  <h2 class="payment">TOTAL PAYMENT : <a>₹<?php echo $email['PRICE']?>/-</a></h2>
+  <h2 class="payment">PAIEMENT TOTAL : <a>₹<?php echo $email['PRICE']?>/-</a></h2>
 
     <div class="card">
       <form method="POST">
-        <h1 class="card__title">Enter Payment Information</h1>
+        <h1 class="card__title">Entrez conditions de vente</h1>
         <div class="card__row">
           <div class="card__col">
-            <label for="cardNumber" class="card__label">Card Number</label
+            <label for="cardNumber" class="card__label">Numéro de carte</label
             ><input
               type="text"
               class="card__input card__input--large"
@@ -252,7 +252,7 @@ if(isset($_POST['pay'])){
         </div>
         <div class="card__row">
           <div class="card__col">
-            <label for="cardExpiry" class="card__label">Expiry Date</label
+            <label for="cardExpiry" class="card__label">Date d'expiration</label
             ><input
               type="text"
               class="card__input"
@@ -278,7 +278,7 @@ if(isset($_POST['pay'])){
           <div class="card__col card__brand"><i id="cardBrand"></i></div>
         </div>
         <input type="submit" VALUE="PAY NOW" class="pay" name="pay">
-        <button class="btn"><a href="cancelbooking.php">CANCEL</a></button>
+        <button class="btn"><a href="cancelbooking.php">ANNULER</a></button>
         <script>
                
           // function myFunction() { 

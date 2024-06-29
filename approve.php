@@ -15,7 +15,7 @@ if($carresult['AVAILABLE']=='Y')
 {
 if($res['BOOK_STATUS']=='APPROVED' || $res['BOOK_STATUS']=='RETURNED')
 {
-    echo '<script>alert("ALREADY APPROVED")</script>';
+    echo '<script>alert("DÉJÀ APPROUVÉ")</script>';
     echo '<script> window.location.href = "adminbook.php";</script>';
 }
 else{
@@ -24,7 +24,7 @@ else{
     $sql2="UPDATE cars set AVAILABLE='N' where CAR_ID=$res[CAR_ID]";
     $query2=mysqli_query($con,$sql2);
     
-    echo '<script>alert("APPROVED SUCCESSFULLY")</script>';
+    echo '<script>alert("APPROUVÉ AVEC SUCCÈS")</script>';
     // $to_email = $email;
     // $subject = "DONOT-REPLY";
     // $body = "YOUR BOOKING FOR THE CAR $carname IS BEEN APPROVED WITH BOOKING ID : $bookid";
@@ -45,7 +45,7 @@ else{
 }  
 }
 else{
-    echo '<script>alert("CAR IS NOT AVAILABLE")</script>';
+    echo '<script>alert("LA VOITURE N EST PAS DISPONIBLE")</script>';
     echo '<script> window.location.href = "adminbook.php";</script>';
 }
 

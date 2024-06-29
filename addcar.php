@@ -137,43 +137,43 @@ input#name{
 
 
 
-<button id="back"><a href="adminvehicle.php">HOME</a></button> 
+<button id="back"><a href="adminvehicle.php">MAISON</a></button> 
     
  <div class="main">
         
         <div class="register">
-        <h2>Enter Details Of New Car</h2>
+        <h2>Entrez les détails de la nouvelle voiture</h2>
         <form id="register"  action="upload.php" method="POST" enctype="multipart/form-data">    
-            <label>Car Name : </label>
+            <label>Nom de la voiture : </label>
             <br>
             <input type ="text" name="carname"
-            id="name" placeholder="Enter Car Name" required>
+            id="name" placeholder="Entrez le nom de la voiture" required>
             <br><br>
 
-            <label>Fuel Type : </label>
+            <label>Type de carburant : </label>
             <br>
             <input type ="text" name="ftype"
-            id="name" placeholder="Enter Fuel Type" required>
+            id="name" placeholder="Entrez le type de carburant" required>
             <br><br>
 
-            <label>Capacity : </label>
+            <label>Capacité : </label>
             <br>
             <input type="number" name="capacity" min="1"
-            id="name" placeholder="Enter Capacity Of Car" required>
+            id="name" placeholder="Entrez la capacité de la voiture" required>
             <br><br>
             
-            <label>Price : </label>
+            <label>Prix : </label>
             <br>
             <input type="number" name="price" min="1"
-            id="name" placeholder="Enter Price Of Car for One Day(in rupees)" required>
+            id="name" placeholder="Entrez le prix de la voiture pour une journée (en roupies)" required>
             <br><br>
 
-            <label>Car Image : </label>
+            <label>Image de voiture: </label>
             <br>
             <input type="file" name="image" required>
            <br><br>
 
-            <input type="submit" class="btnn"  value="ADD CAR" name="addcar">
+            <input type="submit" class="btnn"  value="AJOUTER UNE VOITURE" name="addcar">
             
         
         

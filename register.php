@@ -24,14 +24,14 @@ if(isset($_POST['regs']))
     $Pass=md5($pass);
     if(empty($fname)|| empty($lname)|| empty($email)|| empty($lic)|| empty($ph)|| empty($pass) || empty($gender))
     {
-        echo '<script>alert("please fill the place")</script>';
+        echo '<script>alert("s il te plaît, remplis la place")</script>';
     }
     else{
         if($pass==$cpass){
         $sql2="SELECT *from users where EMAIL='$email'";
         $res=mysqli_query($con,$sql2);
         if(mysqli_num_rows($res)>0){
-            echo '<script>alert("EMAIL ALREADY EXISTS PRESS OK FOR LOGIN!!")</script>';
+            echo '<script>alert("EMAIL EXISTE DÉJÀ APPUYEZ SUR OK POUR VOUS CONNEXION !!")</script>';
             echo '<script> window.location.href = "index.php";</script>';
 
         }
@@ -58,18 +58,18 @@ if(isset($_POST['regs']))
           // echo "Email sending failed!";
           // }
         if($result){
-            echo '<script>alert("Registration Successful Press ok to login")</script>';
+            echo '<script>alert("Inscription réussie Appuyez sur ok pour vous connecter")</script>';
             echo '<script> window.location.href = "index.php";</script>';       
            }
         else{
-            echo '<script>alert("please check the connection")</script>';
+            echo '<script>alert("veuillez vérifier la connexion")</script>';
         }
     
         }
 
         }
         else{
-            echo '<script>alert("PASSWORD DID NOT MATCH")</script>';
+            echo '<script>alert("LE MOT DE PASSE NE CORRESPOND PAS")</script>';
             echo '<script> window.location.href = "register.php";</script>';
         }
     }
@@ -144,70 +144,70 @@ input#cpsw{
   content: "✖";
 }</style> 
 
-    <button id="back"><a href="index.php">HOME</a></button>
-    <h1 id="fam">JOIN OUR FAMILY OF CARS!</h1>
+    <button id="back"><a href="index.php">MAISON</a></button>
+    <h1 id="fam">REJOIGNEZ NOTRE FAMILLE DE VOITURES!</h1>
  <div class="main">
         
         <div class="register">
-        <h2>Register Here</h2>
+        <h2>Inscrivez-vous ici</h2>
         
         <form id="register" action="register.php" method="POST">    
-            <label>First Name : </label>
+            <label>Prénom : </label>
             <br>
             <input type ="text" name="fname"
-            id="name" placeholder="Enter Your First Name" required>
+            id="name" placeholder="Entrez votre prénom" required>
             <br><br>
 
-            <label>Last Name : </label>
+            <label>Nom de famille : </label>
             <br>
             <input type ="text" name="lname"
-            id="name" placeholder="Enter Your Last Name" required>
+            id="name" placeholder="Entrez votre nom de famille" required>
             <br><br>
 
             <label>Email : </label>
             <br>
             <input type="email" name="email"
-            id="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ex: example@ex.com"placeholder="Enter Valid Email" required>
+            id="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ex: example@ex.com"placeholder="Entrez une adresse email valide" required>
             <br><br>
             
-            <label>Your License number : </label>
+            <label>Votre numéro de licence : </label>
             <br>
             <input type="text" name="lic"
-            id="name" placeholder="Enter Your License number" required>
+            id="name" placeholder="Entrez votre numéro de licence" required>
             <br><br>
 
-            <label>Phone Number : </label>
+            <label>Numéro de téléphone : </label>
             <br>
             <input type="tel" name="ph" maxlength="10" onkeypress="return onlyNumberKey(event)"
-            id="name" placeholder="Enter Your Phone Number" required>
+            id="name" placeholder="Entrez votre numéro de téléphone" required>
             <br><br>
 
             
 
-            <label>Password : </label>
+            <label>Mot de passe : </label>
             <br>
             <input type="password" name="pass" maxlength="12"
-            id="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            id="psw" placeholder="Entrer le mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Doit contenir au moins un chiffre et une lettre majuscule et minuscule, et au moins 8 caractères ou plus" required>
             <br><br>
-            <label>Confirm Password : </label>
+            <label>Confirmez le mot de passe : </label>
             <br>
             <input type="password" name="cpass" 
-            id="cpsw" placeholder="Renter the password" required>
+            id="cpsw" placeholder="Rentrez le mot de passe" required>
             <br><br>
             <tr>
-                <td><label">Gender : </label></td><br>
+                <td><label">Genre : </label></td><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td>
-                    <label for="one">Male</label>
+                    <label for="one">Mâle</label>
                     <input type="radio" id="input_enabled" name="gender" value="male" style="width:200px">
                 </td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                 <td>
-                    <label for="two">Female</label>
+                    <label for="two">Femelle</label>
                     <input type="radio" id="input_disabled" name="gender" value="female" style="width:160px" />
                 </td>
             </tr>
             <br><br>
 
-            <input type="submit" class="btnn"  value="REGISTER" name="regs" style="background-color: #ff7200;color: white">
+            <input type="submit" class="btnn"  value="REGISTRE" name="regs" style="background-color: #ff7200;color: white">
             
         
         
@@ -217,11 +217,11 @@ input#cpsw{
         </div> 
     </div>
     <div id="message">
-  <h3>Password must contain the following:</h3>
-  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-  <p id="number" class="invalid">A <b>number</b></p>
-  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  <h3>Le mot de passe doit contenir les éléments suivants:</h3>
+  <p id="letter" class="invalid">UNE <b>minuscule</b> lettre</p>
+  <p id="capital" class="invalid">UNE <b>majuscule (majuscule)</b> lettre</p>
+  <p id="number" class="invalid">UN <b>nombre</b></p>
+  <p id="length" class="invalid"> minimum <b>8 caractères</b></p>
 </div>
 <script>
 var myInput = document.getElementById("psw");

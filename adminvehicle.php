@@ -189,16 +189,16 @@ $num=mysqli_num_rows($queryy);
 <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <li><a href="adminvehicle.php">GESTION DES VÉHICULES</a></li>
+                    <li><a href="adminusers.php">UTILISATEURS</a></li>
+                    <li><a href="admindash.php">COMMENTAIRES</a></li>
                     
-                    <li><a href="adminbook.php">BOOKING REQUEST</a></li>
-                  <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
+                    <li><a href="adminbook.php">DEMANDE DE RÉSERVATION</a></li>
+                  <li> <button class="nn"><a href="index.php">SE DÉCONNECTER</a></button></li>
                 </ul>
             </div>
          </div>
@@ -206,20 +206,20 @@ $num=mysqli_num_rows($queryy);
          </div>
         <div>
             <h1 class="header">CARS</h1>
-            <button class="add"><a href="addcar.php">+ ADD CARS</a></button>
+            <button class="add"><a href="addcar.php">+ AJOUTER DES VOITURES</a></button>
             <div>
                 <div>
                     <table class="content-table">
                 <thead>
                     <tr>
                         
-                        <th>CAR ID</th>
-                        <th>CAR NAME</th>
-                        <th>FUEL TYPE</th>
-                        <th>CAPACITY</th>
-                        <th>PRICE</th>
-                        <th>AVAILABLE</th>
-                        <th>DELETE</th>
+                        <th>ID DE VOITURE</th>
+                        <th>NOM DE LA VOITURE</th>
+                        <th>TYPE DE CARBURANT</th>
+                        <th>CAPACITÉ</th>
+                        <th>PRIX</th>
+                        <th>DISPONIBLE</th>
+                        <th>SUPPRIMER</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -240,17 +240,17 @@ $num=mysqli_num_rows($queryy);
                     <td><?php  
                     if($res['AVAILABLE']=='Y')
                     {
-                        echo 'YES';
+                        echo 'OUI';
                     }
                     else{
-                        echo 'NO';
+                        echo 'NON';
                     }
                     
                     
                     
                     
                     ?></php></td>
-                    <td><button type="submit" class="but" name="approve"><a href="deletecar.php?id=<?php echo $res['CAR_ID']?>">DELETE CAR</a></button></td>
+                    <td><button type="submit" class="but" name="approve"><a href="deletecar.php?id=<?php echo $res['CAR_ID']?>">SUPPRIMER LA VOITURE</a></button></td>
     
                 </tr>
                <?php } ?>

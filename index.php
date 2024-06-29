@@ -35,7 +35,7 @@ require_once('connection.php');
         
         if(empty($email)|| empty($pass))
         {
-            echo '<script>alert("please fill the blanks")</script>';
+            echo '<script>alert("sil vous plaît remplissez les blancs")</script>';
         }
 
         else{
@@ -51,7 +51,7 @@ require_once('connection.php');
                     
                 }
                 else{
-                    echo '<script>alert("Enter a proper password")</script>';
+                    echo '<script>alert("Entrez un mot de passe approprié")</script>';
                 }
 
 
@@ -62,7 +62,7 @@ require_once('connection.php');
 
             }
             else{
-                echo '<script>alert("enter a proper email")</script>';
+                echo '<script>alert("entrez un email approprié")</script>';
             }
         }
     }
@@ -77,36 +77,36 @@ require_once('connection.php');
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">Voitures</h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="aboutus.html">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">MAISON</a></li>
+                    <li><a href="aboutus.html">À PROPOS</a></li>
+                    <li><a href="#">PRESTATIONS DE SERVICE</a></li>
                     
                     <li><a href="contactus.html">CONTACT</a></li>
-                  <li> <button class="adminbtn"><a href="adminlogin.php">ADMIN LOGIN</a></button></li>
+                  <li> <button class="adminbtn"><a href="adminlogin.php">CONNEXION ADMINISTRATEUR</a></button></li>
                 </ul>
             </div>
             
           
         </div>
         <div class="content">
-            <h1>Rent Your <br><span>Dream Car</span></h1>
-            <p class="par">Live the life of Luxury.<br>
-                Just rent a car of your wish from our vast collection.<br>Enjoy every moment with your family<br>
-                 Join us to make this family vast.  </p>
-            <button class="cn"><a href="register.php">JOIN US</a></button>
+            <h1>Louez votre <br><span>Voiture de rêve</span></h1>
+            <p class="par">Vivez la vie du luxe.<br>
+            Louez simplement la voiture de votre choix parmi notre vaste collection.<br>Profitez de chaque instant en famille<br>
+            Rejoignez-nous pour agrandir cette famille.  </p>
+            <button class="cn"><a href="register.php">REJOIGNEZ-NOUS</a></button>
             <div class="form">
-                <h2>Login Here</h2>
+                <h2>Connectez-vous ici</h2>
                 <form method="POST"> 
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="pass" placeholder="Enter Password Here">
-                <input class="btnn" type="submit" value="Login" name="login"></input>
+                <input type="email" name="email" placeholder="Entrez votre e-mail ici">
+                <input type="password" name="pass" placeholder="Entrez le mot de passe ici">
+                <input class="btnn" type="submit" value="Se connecter" name="login"></input>
                 </form>
-                <p class="link">Don't have an account?<br>
-                <a href="register.php">Sign up</a> here</a></p>
+                <p class="link">Vous n'avez pas de compte ?<br>
+                <a href="register.php">S'inscrire</a> ici</a></p>
                 <!-- <p class="liw">or<br>Log in with</p>
                 <div class="icon">
                     &emsp;&emsp;&emsp;&ensp;<a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon> </a>&nbsp;&nbsp;

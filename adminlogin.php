@@ -163,7 +163,7 @@ body{
         
         if(empty($id)|| empty($pass))
         {
-            echo '<script>alert("please fill the blanks")</script>';
+            echo '<script>alert("s il vous plaît remplissez les blancs")</script>';
         }
 
         else{
@@ -176,12 +176,12 @@ body{
                     
                     // session_start();
                     // $_SESSION['email'] = $email;
-                    echo '<script>alert("Welcome ADMINISTRATOR!");</script>';
+                    echo '<script>alert("Bienvenue ADMINISTRATEUR !");</script>';
                     header("location: admindash.php");
                     
                 }
                 else{
-                    echo '<script>alert("Enter a proper password")</script>';
+                    echo '<script>alert("Entrez un mot de passe approprié")</script>';
                 }
 
 
@@ -192,7 +192,7 @@ body{
 
             }
             else{
-                echo '<script>alert("enter a proper email")</script>';
+                echo '<script>alert("entrez un email approprié")</script>';
             }
         }
     }
@@ -213,16 +213,16 @@ body{
 
 
 
-<button class="back"><a href="index.php">Go To Home</a></button>
+<button class="back"><a href="index.php">Aller à la maison</a></button>
     <div class="helloadmin">
-    <h1>HELLO ADMIN!</h1></div>
+    <h1>BONJOUR ADMIN !</h1></div>
 
     
     <form class="form" method="POST">
-        <h2>Admin Login</h2>
-        <input class="h" type="text" name="adid" placeholder="Enter admin user id">
-        <input class="h" type="password" name="adpass" placeholder="Enter admin password">
-        <input type="submit" class="btnn" value="LOGIN" name="adlog" >
+        <h2>Connexion administrateur</h2>
+        <input class="h" type="text" name="adid" placeholder="Entrez l'identifiant de l'utilisateur administrateur">
+        <input class="h" type="password" name="adpass" placeholder="Entrez le mot de passe administrateur">
+        <input type="submit" class="btnn" value="SE CONNECTER" name="adlog" >
     </form>
     
     

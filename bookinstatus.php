@@ -112,7 +112,7 @@ ul li{
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
     if($rows==null){
-        echo '<script>alert("THERE ARE NO BOOKING DETAILS")</script>';
+        echo '<script>alert("IL N Y A AUCUN DÉTAIL DE RÉSERVATION")</script>';
         echo '<script> window.location.href = "cardetails.php";</script>';
     }
     else{
@@ -129,7 +129,7 @@ ul li{
 
 
 ?>
-   <ul><li> <button  class="utton"><a href="cardetails.php">Go to Home</a></button></li><li class="name">HELLO! <?php echo $rows2['FNAME']." ".$rows2['LNAME']?></li>
+   <ul><li> <button  class="utton"><a href="cardetails.php">Aller à la maison</a></button></li><li class="name">BONJOUR! <?php echo $rows2['FNAME']." ".$rows2['LNAME']?></li>
 
 
 
@@ -137,9 +137,9 @@ ul li{
 </ul>
     <div class="box">
          <div class="content">
-             <h1>CAR NAME : <?php echo $rows3['CAR_NAME']?></h1><br>
-             <h1>NO OF DAYS : <?php echo $rows['DURATION']?></h1><br>
-             <h1>BOOKING STATUS : <?php echo $rows['BOOK_STATUS']?></h1><br>
+             <h1>NOM DE LA VOITURE : <?php echo $rows3['CAR_NAME']?></h1><br>
+             <h1>NOMBRE DE JOURS : <?php echo $rows['DURATION']?></h1><br>
+             <h1>STATUT DE RÉSERVATION : <?php echo $rows['BOOK_STATUS']?></h1><br>
              
          </div>
      </div>

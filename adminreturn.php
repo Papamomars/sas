@@ -12,7 +12,7 @@ $res = mysqli_fetch_assoc($result);
 
 if($res['AVAILABLE']=='Y')
 {
-    echo '<script>alert("ALREADY CAR IS RETURNED")</script>';
+    echo '<script>alert("LA VOITURE EST DÉJÀ RETOURNÉE")</script>';
     echo '<script> window.location.href = "adminbook.php";</script>';
 }
 else{
@@ -21,7 +21,7 @@ else{
     $query2=mysqli_query($con,$sql4);
     $sql5="UPDATE booking set BOOK_STATUS='RETURNED' where BOOK_ID=$res2[BOOK_ID]";
     $query=mysqli_query($con,$sql5);
-    echo '<script>alert("CAR RETURNED SUCCESSFULLY")</script>';
+    echo '<script>alert("VOITURE RETOURNÉE AVEC SUCCÈS")</script>';
     echo '<script> window.location.href = "adminbook.php";</script>';
 }  
 
